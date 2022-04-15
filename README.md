@@ -14,12 +14,16 @@ python mnist_exp.py
 
 Experiment parameters are specified from within `mnist_exp.py`.
 
-The code generates Tensorboard plots and visualizations (test set samples, randomly sampled latent vectors $z$ from prior $p(z)$) easily accessible through vscode.
+The code generates Tensorboard plots and visualizations easily accessible through vscode.
 
 Plots
 - Reconstruction $-log \: p(\hat{x})$
 - KL-divergence $D_{KL}(q_{\phi}(z|x), p(z) )$
 - neg. ELBO
+
+Visualizations
+- Test set samples
+- Sampled latent vectors $z$ from prior $p(z)$
 
 References
 - K. Murphy, Probabilistic Machine Learning: Advanced Topics, MIT Press, 2023
