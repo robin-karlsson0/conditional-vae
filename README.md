@@ -1,4 +1,4 @@
-# conditional-vae
+# Conditional VAE with partially observable data
 Code for experimenting with Conditional VAEs and learning from partially observable data. The code is implemented in PyTorch Lightning.
 
 The code implements a full-covariance VAE with minimalistic encoder $enc_{\phi}()$ and decoder $dec_{\theta}()$ models for approximating the posterior distributions $q(z|x)$ and $p(x|z)$.
