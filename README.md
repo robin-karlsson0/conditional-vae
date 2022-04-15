@@ -1,7 +1,7 @@
 # Conditional VAE with partially observable data
 Code for experimenting with Conditional VAEs and learning from partially observable data. The code is implemented in PyTorch Lightning.
 
-The code implements a full-covariance VAE with minimalistic encoder $enc_{\phi}()$ and decoder $dec_{\theta}()$ models for approximating the posterior distributions $q(z|x)$ and $p(x|z)$.
+The code implements a full-covariance VAE with minimalistic encoder $enc_{\phi}()$ and decoder $dec_{\theta}()$ models for approximating the posterior $q(z|x)$ and generative $p(x|z)$ distributions.
 
 All data samples $x$ are corrupted by random masking, resulting partially observable data $\tilde{x}$. The VAE is optimized to discover a latent code $z$ which represents the uncorrupted data $x$ conditioned on the observable data $\tilde{x}$. The mapping from $z$ to $\hat{x}$ is optimized according to a partly uncorrupted $\tilde{x}^*$ data. The VAE is therefore required to learn the distribution of complete solutions from partial inputs and partial solutions.
 
